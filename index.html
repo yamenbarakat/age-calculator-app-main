@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="age-calc">
+      <form action="">
+        <div class="day holder">
+          <label for="day">day</label>
+          <input type="number" placeholder="DD" id="day-input" />
+          <span id="day-msg" class="msg"></span>
+        </div>
+        <div class="month holder">
+          <label for="month">month</label>
+          <input type="number" placeholder="MM" id="month-input" />
+          <span id="month-msg" class="msg"></span>
+        </div>
+        <div class="year holder">
+          <label for="year">year</label>
+          <input type="number" placeholder="YYYY" id="year-input" />
+          <span id="year-msg" class="msg"></span>
+        </div>
+        <button id="submit">
+          <img src="assets/images/icon-arrow.svg" alt="" />
+        </button>
+      </form>
+      <div class="results">
+        <div>
+          <span class="years">--</span>
+          years
+        </div>
+        <div>
+          <span class="months">--</span>
+          months
+        </div>
+        <div>
+          <span class="days">--</span>
+          days
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Yamen</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
